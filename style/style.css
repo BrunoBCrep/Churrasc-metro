@@ -1,0 +1,25 @@
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    border: 2px solid;
+    width: 350px;
+    margin:auto; /* centraliza a div na página */
+    /*padding: 10px;*/
+    border-radius: 10px; /* arredondar as bordas */
+}
+
+#cabeçalho{
+    text-align: center; 
+}
+
+input{
+    text-align: center; /*alinha o texto dentro do input*/
+    /*display: block;*/ /*faz com que cada input ocupe uma linha*/
+    /*margin-bottom: 10px;*/
+    }
+
+#res{
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 20px;
+}

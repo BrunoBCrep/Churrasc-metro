@@ -5,25 +5,25 @@
 
 //Crianças valem por meia pessoa (0,5)
 
-function calcular(){
+function calcular() {
     var numAdultos = document.getElementById('adultos').value
-    var numKids = document.getElementById('criancas').value 
-    var horas = document.getElementById('duracao').value 
+    var numKids = document.getElementById('criancas').value
+    var horas = document.getElementById('duracao').value
     var resultado = document.getElementById('res')
-    
-    if(horas <= 6){
-        let carne = (numAdultos * 0.4) + (numKids * 0.5 * 0.4) 
+
+    if (horas <= 6) {
+        let carne = (numAdultos * 0.4) + (numKids * 0.5 * 0.4)
         let cerveja = numAdultos * 1.2
         let bebidas = (numAdultos * 1.2) + (numKids * 0.5 * 1.2)
-        
+
         resultado.innerHTML = `Itens necessários: <br>
         ${carne} kg de carne <br>${cerveja} litros de cerveja <br> ${bebidas} litros de refri/água.`
     } else {
-        let carne = (numAdultos * 0.65) + (numKids * 0.5 * 0.65) 
+        let carne = (numAdultos * 0.65) + (numKids * 0.5 * 0.65)
         let cerveja = numAdultos * 2.0
         let bebidas = (numAdultos * 1.5) + (numKids * 0.5 * 1.5)
-        
+
         resultado.innerHTML = `Itens necessários: <br>
         ${carne} kg de carne <br>${cerveja} litros de cerveja <br> ${bebidas} litros de refri/água.`
-    } 
-}
+    }
+} 
